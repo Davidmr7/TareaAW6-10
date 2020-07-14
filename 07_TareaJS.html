@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tarea 7</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="">
+	
+</head>
+<body>
+	<li class="nav-item"><a class="nav-link" href="index.html">Indice</a></li>
+
+	<script>
+        //Declaramos variables
+        var news;
+        //Preguntamos por el sueldo y la categoria
+        var sueldo=parseInt(prompt("Ingresa tu sueldo"));
+        var cat=parseInt(prompt("Ingresa tu categoria"));
+        //Use un IF para poner cada categoria y usamos iguales de comparacion estrictos
+        if (cat===1){
+            news=sueldo*.15
+            total=sueldo+news
+        }
+        else if (cat===2){
+            news=sueldo*.10
+            total=sueldo+news
+        }
+        else if (cat===3){
+            news=sueldo*.8
+            total=sueldo+news;
+        }
+        else if (cat===4){
+            news=sueldo*.7
+            total=sueldo+news;
+        }
+        //si se ingreso otro numero salta este mensaje
+        else{
+            document.write("Usted ingreso un nivel de categoria incorreto")
+        }
+        //se imprime la categoria, su aumento y su nuevo sueldo
+        document.write("Su nivel de categoria es de "+cat+" su aumento es de "+news+" y su nuevo sueldo es de "+total);
+	</script>
+
+	
+</body>
+</html>

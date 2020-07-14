@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tarea 9</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="">
+	
+</head>
+<body>
+	<li class="nav-item"><a class="nav-link" href="index.html">Indice</a></li>
+
+	<script>
+        //Se pregunta si quiere conocer la generacion
+         var elec=prompt("Quiere conocer como se llama su generacion?")
+         //usamos un if si el usuario dice que si se hace un ciclo do while
+       if(elec=="Si"){
+           do{
+               //se pregunta por la fecha de nacimiento
+                var fecha=prompt("Ingrese su fecha de nacimiento");
+
+        if (fecha>=1994 && fecha<=2010){
+			alert("Usted pertenece a la Generación Z")
+		}
+		
+		else if(fecha>=1981 && fecha<=1993){
+			alert("Usted pertenece a la Generación Y")
+		}
+		
+		else if (fecha>=1969 && fecha<=1980){
+			alert("Usted pertenece a la Generación X")
+		}
+		else if(fecha>=1949 && fecha<=1968){
+			alert("Usted pertenece a la Generación Baby Boom ")
+            //se pregunta si quiere ingresar otra fecha
+		}var elec=prompt("Quiere conocer otra fecha?")
+        //si dice que si se vuelve a repetir el ciclo
+           } while(elec=="Si");
+       }
+        //si se ingreso una fecha que no coincide o una incorrecta salta este mensaje
+        else{
+			("Lo siento parece que su generacion no tiene nombre o ingreso mal la fecha")
+		}
+     
+	</script>
+
+	
+</body>
+</html>

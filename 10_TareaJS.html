@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tarea 10</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="">
+	
+</head>
+<body>
+	<li class="nav-item"><a class="nav-link" href="index.html">Indice</a></li>
+
+	<script>
+        //Preguntamos si desea viajer si dice que si se hara un do while
+     var elec=prompt("Usted desea viajar?")
+     //Si el usuario dice que si se hace un do while
+     if(elec=="Si"){
+        do{
+            //usamos un switch para ver que mes viajara el usuario
+                var ingre=prompt("Ingrese el mes en el que viajara")
+                var mensaje="";
+                switch(ingre){
+            //Juntamos varios case para un solo mensaje
+			case "Enero":
+            case "Febrero":
+            case "Marzo":
+            case "Abril":
+            case "Mayo":
+            case "Junio":
+            case "Agosto":
+			mensaje="Destino Cancun desde $7000\nDestino Disneylandia desde $12,000\nDestino Ixtapa desde $5000\nDestino Las Vegas desde $12,000";
+			break;
+                        
+            case "Julio":
+            case "Septiembre":
+            case "Octubre":
+            case "Noviembre":
+            case "Diciembre":
+			mensaje="Destino Cancun desde $10,000 Destino\nDisneylandia desde $20,000\nDestino Ixtapa desde $8000\nDestino Las Vegas desde $18,000";
+			break;
+
+			default:
+			mensaje="Usted ingreso un mes incorrecto";
+                        
+		}     //se pregunta si quiere cambiar de mes
+            var elec=prompt("Quiere Ingresar otro mes?")
+            }
+         //si el usuario dice que si se repite el ciclo
+          while(elec=="Si");
+            	alert(mensaje);
+            } 
+        //si el usuario no saltara este mensaje
+         else{
+                document.write("Gracias vuelva pronto")
+            }
+     
+	</script>
+
+	
+</body>
+</html>

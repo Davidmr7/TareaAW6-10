@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tarea 8</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="">
+	
+</head>
+<body>
+	<li class="nav-item"><a class="nav-link" href="index.html">Indice</a></li>
+
+	<script>
+        //Declaramos la variable en 20
+        var hel=20;
+        //Preguntamos si quire agregar un topping
+     var elec=prompt("El helado sin topping cuesta 20, desea un topping?")
+     //Si el usuario dice que si se hace un do while
+     if(elec=="Si"){
+        do{
+            //usamos un switch para que el usuario escoga el topping
+                var ingre=prompt("Que topping quiere (oreo,kitkat,cajeta o choconuez)")
+                var mensaje="";
+                switch(ingre){
+			case "oreo":
+            total=hel+10;
+			mensaje="El total de su helado con oreo es de $"+total;
+			break;
+
+			case "kitkat":
+            total=hel+15;
+			mensaje="El total de su helado con kitkat es de $"+total;
+			break;
+                        
+            case "cajeta":
+            total=hel+10;
+			mensaje="El total de su helado con cajeta es de $"+total;
+			break;
+            
+            case "choconuez":
+            total=hel+20;
+			mensaje="El total de su helado con choconuez es de $"+total;
+			break;
+
+			default:
+			mensaje="Por el momento no contamos con este ingrediente";
+		}     //se pregunta si quiere cambiar el topping
+            var elec=prompt("Quiere cambiar el ingrediente")
+            }
+         //si el usuario dice que si se repite el ciclo
+          while(elec=="Si");
+            	alert(mensaje);
+            } 
+        //si el usuario no quiere un topping salta este mensaje
+         else{
+                document.write("Gracias por su compra el total es de 20")
+            }
+     
+	</script>
+
+	
+</body>
+</html>
